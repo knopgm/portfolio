@@ -1,0 +1,30 @@
+.nav-wrapper {
+  background: var(--primary-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 var(--p-light-shadow);
+  z-index: 300;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & li {
+    list-style: none;
+    padding: 12px 40px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--p-interactive-hovered);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-list {
+    justify-content: flex-end;
+  }
+}
