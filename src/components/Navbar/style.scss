@@ -1,9 +1,11 @@
 .nav-wrapper {
-  background: var(--primary-color);
+  //background-color: rgb(192 121 96 / 20%);
+  // background: hsl(0deg 0% 81% / 50%);
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 0 var(--p-light-shadow);
+  padding: 8px 0;
   z-index: 300;
 }
 
@@ -11,14 +13,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: smaller;
 
   & li {
     list-style: none;
-    padding: 12px 40px;
+    padding: 12px 24px;
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-        background: var(--p-interactive-hovered);
+    & a {
+      color: var(--white-ton);
+    }
+    & a:hover {
+      color: var(--interactive-hovered);
     }
   }
 }

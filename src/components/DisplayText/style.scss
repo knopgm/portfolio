@@ -1,0 +1,16 @@
+.display-text {
+  font-size: 20px;
+  font-weight: 600;
+
+  &--extraLarge {
+    font-size: 60px;
+  }
+
+  &--large {
+    font-size: 28px;
+  }
+
+  &--thin {
+    font-weight: 100;
+  }
+}

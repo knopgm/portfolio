@@ -1,0 +1,18 @@
+.highlighted-text {
+  display: inline-block;
+  position: relative;
+
+  & > span {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    height: 30%;
+  }
+}
