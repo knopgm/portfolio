@@ -1,6 +1,6 @@
 import React from "react";
-// import { DisplayText } from "../../components/DisplayText";
-// import { ProjectTile } from "./components/ProjectTile/ProjectTile";
+import { DisplayText } from "../../components/DisplayText";
+import { ProjectCard } from "./components/ProjectCard/ProjectCard";
 
 import "./style.scss";
 
@@ -9,20 +9,18 @@ import "./style.scss";
 //   project item = { title, links = {github, website}, imgUrl, description }
 
 export function Projects(props) {
-  console.log(props);
+  //console.log(props);
   return (
     <section id="projects" className="projects">
-      {/* <div className="container">
+      <div className="container">
         <div className="projects__header">
           <DisplayText size="extraLarge">
-            Here are some of my Projects
+            Here are some of my projects
           </DisplayText>
         </div>
-
-        <div className="project__grid">
-          {props.projects.map((projectItem, index) => (
-            <ProjectTile
-              alignment={index % 2 === 0 ? "left" : "right"}
+        <div className="projects__grid">
+          {props.projects.map((projectItem) => (
+            <ProjectCard
               key={projectItem.title}
               title={projectItem.title}
               description={projectItem.description}
@@ -34,7 +32,7 @@ export function Projects(props) {
             />
           ))}
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }

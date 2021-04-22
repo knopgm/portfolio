@@ -1,6 +1,9 @@
 .projects {
-  background: var(--background-dark-black);
+  background: var(--background-black);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects__header {
@@ -11,18 +14,16 @@
 //______________________________________________________________________
 //Project Cards
 
-.project__grid {
+.projects__grid {
   display: grid;
   grid-gap: 36px;
-  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 769px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
-// @media screen and (min-width: 481px) {
-//   .project-grid {
-//     grid-template-columns: 2fr 2fr;
-//   }
-// }
-// @media only screen and (min-width: 769px) {
-//   .project-grid {
-//     grid-template-columns: 2fr 2fr;
-//   }
-// }

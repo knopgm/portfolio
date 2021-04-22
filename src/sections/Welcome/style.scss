@@ -1,5 +1,5 @@
 .welcome-section {
-  background: var(--background-dark-black);
+  background: var(--background-black);
   text-align: left;
   height: 100vh;
   display: flex;
@@ -11,28 +11,13 @@
   text-align: center;
   display: grid;
   align-items: center;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 4rem;
-}
+  grid-template-columns: 1fr;
 
-@media only screen and (min-width: 769px) {
-  .welcome-section-inner-wrapper {
+  @media only screen and (min-width: 769px) {
     justify-content: center;
     flex-direction: row;
     text-align: left;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 4rem;
   }
-}
-
-.welcome-text-head {
-  color: white;
-}
-
-.font-light {
-  background: var(--background-dark-black);
-  color: var(--secondary-text-on-dark-background);
-  padding: 10px;
-}
-
-.welcome-text-head {
-  padding: 10px;
 }

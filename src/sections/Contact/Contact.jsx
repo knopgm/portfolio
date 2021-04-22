@@ -1,6 +1,9 @@
 import React from "react";
+import { IconGithubSvg, IconAtSignSvg, IconLinkedinSvg } from "icons";
+
 import { DisplayText } from "../../components/DisplayText";
 import { HighlightedText } from "../../components/HighlightedText";
+import { Icon } from "../../components/Icon";
 
 import "./style.scss";
 
@@ -25,8 +28,15 @@ export function Contact() {
             rel="noreferrer"
             className="btn contact-details"
           >
-            <i className="fab fa-linkedin"></i>
-            Linkedin
+            <Icon source={IconLinkedinSvg} />
+          </a>
+          <a
+            href="mailto:knop.gm@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="btn contact-details"
+          >
+            <Icon source={IconAtSignSvg} />
           </a>
           <a
             id="profile-link"
@@ -35,17 +45,7 @@ export function Contact() {
             rel="noreferrer"
             className="btn contact-details"
           >
-            <i className="fab fa-github"></i>
-            Github
-          </a>
-          <a
-            href="mailto:knop.gm@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="btn contact-details"
-          >
-            <i className="fas fa-at"></i>
-            Send a mail
+            <Icon source={IconGithubSvg} />
           </a>
         </div>
       </div>

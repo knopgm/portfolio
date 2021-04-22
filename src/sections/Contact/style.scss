@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  background: var(--background-dark-black);
-  color: var(--primary-text-on-dark-background);
+  background: var(--background-black);
+  color: var(--white-ton);
   height: 100vh;
   text-align: center;
 }
@@ -20,6 +20,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: solid var(--primary-color);
+  border-radius: 30px;
+  align-items: center;
 }
 @media only screen and (min-width: 769px) {
   .contact-links {
@@ -40,6 +43,9 @@
 }
 
 .contact-details:hover {
-  color: var(--interactive-hovered);
-  transform: translateY(-10px);
+  transform: translateY(-6px);
+
+  svg {
+    fill: var(--interactive-hovered);
+  }
 }
