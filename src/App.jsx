@@ -15,7 +15,7 @@ import "./styles.scss";
 
 const myDetails = {
   name: "Gabriela",
-  aspiringFrase: "A Web Developer, Frontend aspiring / entusiastic",
+  subtitleFrase: "A Web Developer, Frontend aspiring / entusiastic",
   // aboutMe:
   //   "My interest in web development started back in 2016 when I first work in an IT companie enviroment as a trainee in Business administration. At that time, it looks like an impossible job for me, but in 2019 I had the oportunity to do some online trial of programing courses, when I realize that could be possible to change my career. I'm looking for working in a team, learning and improving the accessibility and dinamic of the companies products.",
   technologies: ["JavaScript (ES6+)", "React", "Node.js", "HTML", "CSS"],

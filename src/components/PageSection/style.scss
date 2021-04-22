@@ -1,0 +1,51 @@
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  &:first-of-type {
+    padding-top: 5rem;
+
+    @media only screen and (min-width: 768px) {
+      padding-top: 0;
+    }
+  }
+
+  &__next-section-anchor {
+    $svgWidth: 64px;
+    $spacing: 16px;
+
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-($svgWidth + $spacing * 2) / 2, 0);
+
+    transition: all 0.25s;
+
+    a {
+      padding: $spacing;
+    }
+
+    @media only screen and (min-width: 481px) {
+      display: block;
+    }
+
+    &:hover {
+      transform: translate(-($svgWidth + $spacing * 2) / 2, 10px);
+
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+
+    svg {
+      width: $svgWidth;
+      height: 32px;
+      transition: all 0.25s;
+    }
+  }
+}

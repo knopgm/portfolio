@@ -1,3 +1,16 @@
-.about-me__paragraph__important {
-  margin-top: 16px;
+.about-me {
+  &__paragraph__important {
+    margin-top: 16px;
+  }
+
+  &__paragraph {
+    &__responsive {
+      background: none;
+      border: none;
+      color: var(--white-ton);
+      // @media only screen and (min-width: 769px) {
+      //   display: none;
+      // }
+    }
+  }
 }

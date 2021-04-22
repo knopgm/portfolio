@@ -1,5 +1,9 @@
 .project-details {
   padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__title {
     color: var(--primary-color);

@@ -1,23 +1,33 @@
-.welcome-section {
-  background: var(--background-black);
-  text-align: left;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .welcome-section-inner-wrapper {
-  text-align: center;
+  text-align: justify;
   display: grid;
   align-items: center;
+  justify-items: center;
   grid-template-columns: 1fr;
+  grid-gap: 4rem;
+
+  @media only screen and (min-width: 481px) {
+    text-align: left;
+    grid-template-columns: 2.5fr 1.5fr;
+  }
 
   @media only screen and (min-width: 769px) {
-    justify-content: center;
-    flex-direction: row;
     text-align: left;
     grid-template-columns: 3fr 1fr;
-    grid-gap: 4rem;
+  }
+}
+
+.welcome-text {
+  //background: blue;
+  text-align: center;
+  padding: 15px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+    text-align: initial;
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
   }
 }

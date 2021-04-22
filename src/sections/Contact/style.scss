@@ -1,24 +1,16 @@
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
   background: var(--background-black);
   color: var(--white-ton);
-  height: 100vh;
   text-align: center;
 }
 .contact-section > * {
   width: 100%;
 }
 .contact-section-header {
-  font-size: 2.5rem;
-
-  margin: 32px;
+  margin-bottom: 32px;
 }
 .contact-links {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   border: solid var(--primary-color);
   border-radius: 30px;
@@ -43,7 +35,7 @@
 }
 
 .contact-details:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
 
   svg {
     fill: var(--interactive-hovered);

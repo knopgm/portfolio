@@ -1,6 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import { IconGithubSvg, IconAtSignSvg, IconLinkedinSvg } from "icons";
 
+import { PageSection } from "../../components/PageSection";
 import { DisplayText } from "../../components/DisplayText";
 import { HighlightedText } from "../../components/HighlightedText";
 import { Icon } from "../../components/Icon";
@@ -8,9 +12,17 @@ import { Icon } from "../../components/Icon";
 import "./style.scss";
 
 export function Contact() {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
-    <section id="contact" className="contact-section">
-      <div className="container">
+    <PageSection anchor="contact" nextSectionAnchor="welcome">
+      <motion.div
+        ref={ref}
+        className="contact-section"
+        initial={{ opacity: 0, y: 10 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="contact-section-header">
           <DisplayText size="extraLarge">
             {`Let's work `}
@@ -48,7 +60,7 @@ export function Contact() {
             <Icon source={IconGithubSvg} />
           </a>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </PageSection>
   );
 }
