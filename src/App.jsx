@@ -26,7 +26,7 @@ const projectList = [
   {
     links: {
       github: "https://github.com/knopgm/portfolio",
-      website: "https://github.com/knopgm/portfolio",
+      website: undefined,
     },
     imgUrl: portfolioCoverImage,
     title: "My Portfolio",

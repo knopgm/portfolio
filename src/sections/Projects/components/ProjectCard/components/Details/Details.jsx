@@ -7,25 +7,27 @@ import { Icon } from "../../../../../../components/Icon";
 
 import "./style.scss";
 
-export function Details(props) {
+export function Details({ title, description, links }) {
   return (
     <div className="project-details">
       <div>
         <div className="project-details__title">
-          <DisplayText>{props.title}</DisplayText>
+          <DisplayText>{title}</DisplayText>
         </div>
         <div className="project-details__description">
-          <Text>{props.description}</Text>
+          <Text>{description}</Text>
         </div>
       </div>
 
       <div className="project-details__links">
-        <a href={props.links.github} target="_blank" rel="noreferrer">
+        <a href={links.github} target="_blank" rel="noreferrer">
           <Icon source={IconGithubSvg} />
         </a>
-        <a href={props.links.github} target="_blank" rel="noreferrer">
-          <Icon source={IconExternalSvg} />
-        </a>
+        {links.website && (
+          <a href={links.website} target="_blank" rel="noreferrer">
+            <Icon source={IconExternalSvg} />
+          </a>
+        )}
       </div>
     </div>
   );
