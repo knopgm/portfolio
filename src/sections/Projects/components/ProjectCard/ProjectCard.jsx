@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ColoredBox } from "../../../../components/ColoredBox";
 import { Details } from "./components/Details/Details";
 
