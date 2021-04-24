@@ -31,17 +31,17 @@ const projectList = [
     imgUrl: portfolioCoverImage,
     title: "My Portfolio",
     description:
-      "My first personal project - A freecodecamp challenge that I improved and personalized to present myself. I used React and hosted it on Netlify.",
+      "My first personal project - A freecodecamp challenge that I improved and personalized to introduce myself. I used React and hosted it on Netlify.",
   },
   {
     links: {
       github: "https://github.com/knopgm/drum-machine",
-      website: "https://github.com/knopgm/drum-machine",
+      website: "https://knopgm-drum-machine.netlify.app",
     },
     imgUrl: drumMachineCoverImage,
     title: "Drum Machine",
     description:
-      "Understanding useState - Training useState, eventlistners and how to animate buttons with Framer Motion.",
+      "Exciting freecodecamp project which I had the oportunity to practice event listeners, callback functions, JS media (audio) API and handle animations with the Framer Motion library.",
   },
   {
     links: {
@@ -51,17 +51,17 @@ const projectList = [
     imgUrl: calculatorCoverImage,
     title: "Calculator",
     description:
-      "Challanging project - Training logic and conditions to reproduce a calculator.",
+      "A Challenging project for a beginner with lots of logical conditions to properly handle the functionality of a simple calculator.",
   },
   {
     links: {
-      github: "https://github.com/knopgm/Quote-machine",
-      website: "https://github.com/knopgm/Quote-machine",
+      github: "https://github.com/knopgm/quote-machine",
+      website: "https://knopgm-quote-machine.netlify.app",
     },
     imgUrl: quoteMachineCoverImage,
     title: "Quote Machine",
     description:
-      "A fetch data lesson - Training how to fetch external data on the internet to reproduce a quote-machine",
+      'A fetch lesson - Training how to retrieve data from an external API to reproduce a "quote-machine", as well as managing its internal state and applying a few animations.',
   },
 ];
 
