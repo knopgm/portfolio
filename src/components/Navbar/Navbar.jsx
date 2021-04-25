@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
-import resume from "../../assets/knop.gm@gmail.com.pdf";
+import { resumePdf } from "../../assets/";
 import { useLockBodyScroll } from "../../utilities/hooks";
 import { Container } from "../Container";
 import { MenuButton } from "../MenuButton";
@@ -47,7 +47,7 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href={resume}
+                href={resumePdf}
                 rel="noreferrer"
                 target="_blank"
                 onClick={closeMenu}
