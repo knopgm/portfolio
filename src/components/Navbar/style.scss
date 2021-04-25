@@ -21,10 +21,6 @@
       display: flex;
       flex-direction: column;
       padding-top: 24px !important;
-
-      & li {
-        padding-left: 0;
-      }
     }
   }
 
@@ -49,14 +45,20 @@
 
     & li {
       list-style: none;
-      padding: 12px 24px;
       transition: all 0.2s ease-in-out;
 
       & a {
         color: var(--white-ton);
-      }
-      & a:hover {
-        color: var(--interactive-hovered);
+        display: block;
+        padding: 1rem 0;
+
+        @media only screen and (min-width: 768px) {
+          padding: 1rem 1.25rem;
+        }
+
+        &:hover {
+          color: var(--interactive-hovered);
+        }
       }
     }
   }
