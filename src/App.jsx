@@ -9,6 +9,7 @@ import {
   quoteMachineCoverImage,
   calculatorCoverImage,
   portfolioCoverImage,
+  subscriptionFlowCoverImage,
 } from "./images";
 
 import "./styles/all.scss";
@@ -23,6 +24,16 @@ const myDetails = {
 };
 
 const projectList = [
+  {
+    links: {
+      github: "https://github.com/knopgm/subscription-flow",
+      website: "https://knopgm-subscription-flow.netlify.app",
+    },
+    imgUrl: subscriptionFlowCoverImage,
+    title: "Subscription Flow",
+    description:
+      "A 5-days challenge where I did practice React Router and also other external libraries to rendering data from my forms.",
+  },
   {
     links: {
       github: "https://github.com/knopgm/portfolio",
