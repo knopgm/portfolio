@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1>My Professional Portfolio</h1> <p>Thanks for checking out the repo of my portfolio.<br> It is my first project from scratch, planned to be used as my profissional work presentation.<br> Another freecodecamp challenge for practicing HTML and CSS, that I wanted to give more than just my personal touch, and improve with React and animations.<br> The app was responsive coded.</p>",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -37,5 +37,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intersection-observer": "^8.31.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knopgm/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knopgm/portfolio/issues"
+  },
+  "homepage": "https://github.com/knopgm/portfolio#readme"
 }
